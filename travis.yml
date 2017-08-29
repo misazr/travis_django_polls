@@ -12,6 +12,7 @@ before_install:
   - export DJANGO_SETTINGS_MODULE=django_polls.settings
   - export PYTHONPATH=$HOME/builds/misazr/travis_django_polls
   - export PIP_USE_MIRRORS=true
+  - export PYTHONPATH="/usr/local/lib/python2.7/dist-packages"
 
 install:
   - pip install -r requirements.txt
